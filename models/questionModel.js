@@ -10,7 +10,8 @@ const questionSchema = mongoose.Schema({
         type: String,
         required: [true, "Community name is required"]
     },
-    createdAt: Date
+    createdAt: Date,
+    communityId: mongoose.Schema.ObjectId
 })
 
 

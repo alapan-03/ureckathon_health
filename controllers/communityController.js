@@ -18,7 +18,8 @@ exports.getIntoCommunity = async (req, res, next) => {
 
             res.status(201).json({
                 status: "success",
-                createCom
+                createCom,
+                communityId: user.communityId
             })
         }
         else{
@@ -27,7 +28,8 @@ exports.getIntoCommunity = async (req, res, next) => {
 
             res.status(200).json({
                 status: "success",
-                message: "User is added to the respective community"
+                message: "User is added to the respective community",
+                communityId: user.communityId
             })
         }
     
