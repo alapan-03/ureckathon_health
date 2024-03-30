@@ -6,7 +6,6 @@ const bcrypt = require("bcryptjs");
 const crypto = require("crypto");
 
 const UserSchema = mongoose.Schema({
-    community: [mongoose.Schema.ObjectId],
     name: {
         type: String,
         // unique: true,
