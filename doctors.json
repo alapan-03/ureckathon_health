@@ -1,0 +1,150 @@
+[
+    {
+      "name": "Dr. Alice Adams",
+      "clinic": "Adams Family Clinic",
+      "age": 40,
+      "experience": 15,
+      "specialty": "Family Medicine"
+    },
+    {
+      "name": "Dr. Benjamin Brown",
+      "clinic": "Brown Orthopedic Center",
+      "age": 45,
+      "experience": 20,
+      "specialty": "Orthopedics"
+    },
+    {
+      "name": "Dr. Catherine Carter",
+      "clinic": "Carter Dermatology Clinic",
+      "age": 38,
+      "experience": 12,
+      "specialty": "Dermatology"
+    },
+    {
+      "name": "Dr. David Davis",
+      "clinic": "Davis Dental Care",
+      "age": 55,
+      "experience": 25,
+      "specialty": "Dentistry"
+    },
+    {
+      "name": "Dr. Emily Evans",
+      "clinic": "Evans Pediatrics",
+      "age": 42,
+      "experience": 18,
+      "specialty": "Pediatrics"
+    },
+    {
+      "name": "Dr. Frank Foster",
+      "clinic": "Foster Neurology Clinic",
+      "age": 50,
+      "experience": 22,
+      "specialty": "Neurology"
+    },
+    {
+      "name": "Dr. Grace Green",
+      "clinic": "Green Eye Care",
+      "age": 35,
+      "experience": 10,
+      "specialty": "Ophthalmology"
+    },
+    {
+      "name": "Dr. Henry Hill",
+      "clinic": "Hill Cardiology Clinic",
+      "age": 48,
+      "experience": 20,
+      "specialty": "Cardiology"
+    },
+    {
+      "name": "Dr. Isabella Ingram",
+      "clinic": "Ingram Gastroenterology Center",
+      "age": 43,
+      "experience": 17,
+      "specialty": "Gastroenterology"
+    },
+    {
+      "name": "Dr. Jack Jackson",
+      "clinic": "Jackson Surgery Center",
+      "age": 52,
+      "experience": 28,
+      "specialty": "General Surgery"
+    },
+    {
+      "name": "Dr. Katherine King",
+      "clinic": "King Psychiatry Clinic",
+      "age": 40,
+      "experience": 15,
+      "specialty": "Psychiatry"
+    },
+    {
+      "name": "Dr. Liam Lee",
+      "clinic": "Lee Urology Clinic",
+      "age": 47,
+      "experience": 21,
+      "specialty": "Urology"
+    },
+    {
+      "name": "Dr. Maria Martinez",
+      "clinic": "Martinez Obstetrics & Gynecology",
+      "age": 39,
+      "experience": 14,
+      "specialty": "Obstetrics & Gynecology"
+    },
+    {
+      "name": "Dr. Nathan Nelson",
+      "clinic": "Nelson ENT Clinic",
+      "age": 44,
+      "experience": 19,
+      "specialty": "Otolaryngology"
+    },
+    {
+      "name": "Dr. Olivia Owens",
+      "clinic": "Owens Allergy & Immunology Clinic",
+      "age": 37,
+      "experience": 13,
+      "specialty": "Allergy & Immunology"
+    },
+    {
+      "name": "Dr. Patrick Parker",
+      "clinic": "Parker Pain Management Center",
+      "age": 53,
+      "experience": 24,
+      "specialty": "Pain Management"
+    },
+    {
+      "name": "Dr. Quinn Quinn",
+      "clinic": "Quinn Rheumatology Clinic",
+      "age": 41,
+      "experience": 16,
+      "specialty": "Rheumatology"
+    },
+    {
+      "name": "Dr. Rachel Rodriguez",
+      "clinic": "Rodriguez Oncology Center",
+      "age": 46,
+      "experience": 20,
+      "specialty": "Oncology"
+    },
+    {
+      "name": "Dr. Samuel Stewart",
+      "clinic": "Stewart Endocrinology Clinic",
+      "age": 36,
+      "experience": 11,
+      "specialty": "Endocrinology"
+    },
+    {
+      "name": "Dr. Taylor Taylor",
+      "clinic": "Taylor Plastic Surgery Center",
+      "age": 49,
+      "experience": 23,
+      "specialty": "Plastic Surgery"
+    },
+    {
+      "name": "Dr. Victoria Vargas",
+      "clinic": "Vargas Pulmonology Clinic",
+      "age": 42,
+      "experience": 18,
+      "specialty": "Pulmonology"
+    }
+  ]
+  

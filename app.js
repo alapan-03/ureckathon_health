@@ -3,7 +3,8 @@ const app = express()
 const cors = require("cors")
 const mongoose = require("mongoose");
 const authRouter = require("./routers/authRouter")
-// const userRouter = require("./Routers/userRouter")
+const comRouter = require("./routers/communityRouter")
+const qRouter = require("./routers/questionRouter")
 // const commRouter = require("./Routers/communityRouter")
 // const postRouter = require("./Routers/postRouter")
 // const notiRouter = require("./Routers/notiRouter")
@@ -27,7 +28,8 @@ app.listen(process.env.PORT || 4000, ()=>{
 
 
 app.use("/api/v1/auth", authRouter);
-// app.use("/api/v1/user", userRouter);
+app.use("/api/v1/community", comRouter);
+app.use("/api/v1/question", qRouter);
 // app.use("/api/v1/community", commRouter);
 // app.use("/api/v1/post", postRouter);
 // app.use("/api/v1/noti", notiRouter);

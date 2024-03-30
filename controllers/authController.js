@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const User = require("./../models/userModel");
+const User = require("../models/authModel");
 const jwt = require("jsonwebtoken");
-// const { promisify } = require("util");
+const { promisify } = require("util");
 let express = require('express'); 
 let app = express() 
 
@@ -81,6 +81,7 @@ exports.login = async (req, res, next) => {
 
   exports.getUsers = async (req, res, next) => {
     const user = await User.find();
+    console.log(req.city)
 
     res.status(200).json({
         status: "success",
@@ -124,11 +125,12 @@ if(!currUser){
 }
 
 req.user = currUser;
+req.city = currUser.city;
 
 }catch(err){
   return res.status(500).json({
     status: "fail",
-    message: err
+    message: err.message
   })
 }
 // console.log(req.user)
