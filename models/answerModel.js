@@ -3,11 +3,16 @@ const mongoose = require("mongoose");
 const answerSchema = mongoose.Schema({
     answer: {
         type: String,
+        required: [true, "Answer is required"]
     },
 
     doctorId: {
         type: mongoose.Schema.ObjectId,
         ref: "Doctor"
+    },
+    userId: {
+        type: mongoose.Schema.ObjectId,
+        ref: "User"
     },
 
     questionId: mongoose.Schema.ObjectId
