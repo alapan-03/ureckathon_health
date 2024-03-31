@@ -15,6 +15,8 @@ const answerSchema = mongoose.Schema({
         ref: "User"
     },
 
+    createdAt: Date,
+
     questionId: mongoose.Schema.ObjectId
 })
 

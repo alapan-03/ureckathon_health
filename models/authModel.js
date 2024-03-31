@@ -38,6 +38,12 @@ const UserSchema = mongoose.Schema({
     city: {
         type: String,
     },
+
+    role: {
+        type: String,
+        default: "user",
+        enum: ["user", "admin"]
+    },
     // passChangedAt: Date,
 
     communityId: mongoose.Schema.ObjectId,

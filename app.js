@@ -9,6 +9,7 @@ const aRouter = require("./routers/ansRouter")
 const docModel = require("./models/doctorModel")
 const fs = require("fs")
 const docRouter = require("./routers/doctorRouter")
+const adminRouter = require("./routers/adminRouter")
 // const postRouter = require("./Routers/postRouter")
 // const notiRouter = require("./Routers/notiRouter")
 
@@ -55,6 +56,7 @@ app.use("/api/v1/community", comRouter);
 app.use("/api/v1/question", qRouter);
 app.use("/api/v1/answer", aRouter);
 app.use("/api/v1/doctor", docRouter);
+app.use("/api/v1/doctorAdm", adminRouter);
 // app.use("/api/v1/post", postRouter);
 // app.use("/api/v1/noti", notiRouter);
 

@@ -6,5 +6,6 @@ const bodyParser = require("body-parser");
 router.route("/signup").post(bodyParser.json(), authController.signup);
 router.route("/login").post(bodyParser.json(), authController.login);
 router.route("/getUsers").get(bodyParser.json(), authController.protect, authController.getUsers);
+router.route("/getCurrUser").get(bodyParser.json(), authController.protect, authController.getCurrentUser);
 
 module.exports = router;

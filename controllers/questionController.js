@@ -22,7 +22,7 @@ exports.postQuestion = async (req, res, next) => {
 
 exports.getQuestion = async (req, res, next) => {
     try{
-        const q = await Ques.find({communityId: req.params.comId}).populate("userId");
+        const q = await Ques.find({communityId: req.params.comId}).populate("userId").sort({ createdAt: -1 });
 
         res.status(201).json({
             status: "success",

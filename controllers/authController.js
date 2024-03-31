@@ -14,11 +14,6 @@ try{
     req.name = newUser.name;
 
     //always give access to admin
-    if(req.body.role === "admin"){
-      newUser.notification.access = true;
-
-      await newUser.save({ validateBeforeSave: false });
-    }
 
      res.status(201).json({
         status: "success",
@@ -136,4 +131,22 @@ req.city = currUser.city;
 // console.log(req.user)
 next()
 
+}
+
+
+exports.getCurrentUser = async (req, res) => {
+    try{
+        const user = await User.findById(req.user._id);
+
+        res.status(200).json({
+            status: "success",
+            user
+        })
+    }
+    catch(err){
+        res.status(200).json({
+            status: "fail",
+            message: err.message
+        })
+    }
 }

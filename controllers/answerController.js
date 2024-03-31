@@ -8,6 +8,8 @@ exports.postAns = async (req, res, next) => {
         a.questionId = req.params.qId;
         a.doctorId = req.params.docId? req.params.docId : null;
         a.userId = req.user._id;
+        a.createdAt = Date.now();
+
         await a.save({ validateBeforeSave: false })
 
         res.status(201).json({
@@ -25,7 +27,7 @@ exports.postAns = async (req, res, next) => {
 
 exports.getAns = async (req, res, next) => {
     try{
-        const a = await Ans.find({questionId: req.params.qId}).populate("doctorId").populate("userId");
+        const a = await Ans.find({questionId: req.params.qId}).populate("doctorId").populate("userId").sort({ createdAt: -1 });
 
         res.status(201).json({
             status: "success",
